@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538C29CE85B31B5D3E94D1C9 /* libPods-kion WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC47B1D065261523C570659 /* libPods-kion WatchKit Extension.a */; };
+		8F96DCCED0A19C7CCB485496 /* libPods-kion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C31228EDA19005350C305 /* libPods-kion.a */; };
+		AC7588DC1AE8BA2100452C07 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7588DB1AE8BA2100452C07 /* InterfaceController.m */; };
+		AC7588DF1AE8BA2100452C07 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7588DE1AE8BA2100452C07 /* NotificationController.m */; };
+		AC7588E11AE8BA2100452C07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7588E01AE8BA2100452C07 /* Images.xcassets */; };
+		AC7588E51AE8BA2100452C07 /* kion WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = AC7588E41AE8BA2100452C07 /* kion WatchKit App.app */; };
+		AC7588ED1AE8BA2100452C07 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7588EB1AE8BA2100452C07 /* Interface.storyboard */; };
+		AC7588EF1AE8BA2100452C07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7588EE1AE8BA2100452C07 /* Images.xcassets */; };
+		AC7588F21AE8BA2100452C07 /* kion WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC7588D51AE8BA2100452C07 /* kion WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACE4069C1AECBB1900692884 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE4069B1AECBB1900692884 /* GlanceController.m */; };
 		FE892B581AC8DEBE0013C663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE892B571AC8DEBE0013C663 /* main.m */; };
 		FE892B5B1AC8DEBE0013C663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE892B5A1AC8DEBE0013C663 /* AppDelegate.m */; };
 		FE892B5E1AC8DEBE0013C663 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE892B5D1AC8DEBE0013C663 /* ViewController.m */; };
@@ -17,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC7588E61AE8BA2100452C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE892B4A1AC8DEBE0013C663 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7588E31AE8BA2100452C07;
+			remoteInfo = "kion WatchKit App";
+		};
+		AC7588F01AE8BA2100452C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE892B4A1AC8DEBE0013C663 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7588D41AE8BA2100452C07;
+			remoteInfo = "kion WatchKit Extension";
+		};
 		FE892B6C1AC8DEBF0013C663 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE892B4A1AC8DEBE0013C663 /* Project object */;
@@ -26,7 +50,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC7588F91AE8BA2100452C07 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC7588F21AE8BA2100452C07 /* kion WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AC7588D51AE8BA2100452C07 /* kion WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "kion WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7588D81AE8BA2100452C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7588D91AE8BA2100452C07 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AC7588DA1AE8BA2100452C07 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		AC7588DB1AE8BA2100452C07 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		AC7588DD1AE8BA2100452C07 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		AC7588DE1AE8BA2100452C07 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		AC7588E01AE8BA2100452C07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC7588E41AE8BA2100452C07 /* kion WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kion WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7588EA1AE8BA2100452C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7588EC1AE8BA2100452C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AC7588EE1AE8BA2100452C07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ACE4063A1AECB25000692884 /* kion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = kion.entitlements; sourceTree = "<group>"; };
+		ACE4063B1AECB2C600692884 /* kion WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "kion WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		ACE4069A1AECBB1900692884 /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		ACE4069B1AECBB1900692884 /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		C9BAEF2E1528E95894FAC2D1 /* Pods-kion WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kion WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kion WatchKit Extension/Pods-kion WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A1E62C62863D5A51398505 /* Pods-kion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kion/Pods-kion.debug.xcconfig"; sourceTree = "<group>"; };
+		EF70A3632039354FAB196D24 /* Pods-kion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kion.release.xcconfig"; path = "Pods/Target Support Files/Pods-kion/Pods-kion.release.xcconfig"; sourceTree = "<group>"; };
+		FA29F58C7CC656BA2D63B4C0 /* Pods-kion WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kion WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-kion WatchKit Extension/Pods-kion WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		FDC47B1D065261523C570659 /* libPods-kion WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kion WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892B521AC8DEBE0013C663 /* kion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892B561AC8DEBE0013C663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE892B571AC8DEBE0013C663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,13 +99,23 @@
 		FE892B6B1AC8DEBF0013C663 /* kionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892B701AC8DEBF0013C663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE892B711AC8DEBF0013C663 /* kionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kionTests.m; sourceTree = "<group>"; };
+		FF6C31228EDA19005350C305 /* libPods-kion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC7588D21AE8BA2100452C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538C29CE85B31B5D3E94D1C9 /* libPods-kion WatchKit Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE892B4F1AC8DEBE0013C663 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F96DCCED0A19C7CCB485496 /* libPods-kion.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +129,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015375E6C1CDCFB758E8393A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C31228EDA19005350C305 /* libPods-kion.a */,
+				FDC47B1D065261523C570659 /* libPods-kion WatchKit Extension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC7588D61AE8BA2100452C07 /* kion WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4063B1AECB2C600692884 /* kion WatchKit Extension.entitlements */,
+				AC7588DA1AE8BA2100452C07 /* InterfaceController.h */,
+				AC7588DB1AE8BA2100452C07 /* InterfaceController.m */,
+				AC7588DD1AE8BA2100452C07 /* NotificationController.h */,
+				AC7588DE1AE8BA2100452C07 /* NotificationController.m */,
+				ACE4069A1AECBB1900692884 /* GlanceController.h */,
+				ACE4069B1AECBB1900692884 /* GlanceController.m */,
+				AC7588E01AE8BA2100452C07 /* Images.xcassets */,
+				AC7588D71AE8BA2100452C07 /* Supporting Files */,
+			);
+			path = "kion WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AC7588D71AE8BA2100452C07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC7588D81AE8BA2100452C07 /* Info.plist */,
+				AC7588D91AE8BA2100452C07 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC7588E81AE8BA2100452C07 /* kion WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AC7588EB1AE8BA2100452C07 /* Interface.storyboard */,
+				AC7588EE1AE8BA2100452C07 /* Images.xcassets */,
+				AC7588E91AE8BA2100452C07 /* Supporting Files */,
+			);
+			path = "kion WatchKit App";
+			sourceTree = "<group>";
+		};
+		AC7588E91AE8BA2100452C07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC7588EA1AE8BA2100452C07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C502E282238FDCDF27754844 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A1E62C62863D5A51398505 /* Pods-kion.debug.xcconfig */,
+				EF70A3632039354FAB196D24 /* Pods-kion.release.xcconfig */,
+				C9BAEF2E1528E95894FAC2D1 /* Pods-kion WatchKit Extension.debug.xcconfig */,
+				FA29F58C7CC656BA2D63B4C0 /* Pods-kion WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE892B491AC8DEBE0013C663 = {
 			isa = PBXGroup;
 			children = (
 				FE892B541AC8DEBE0013C663 /* kion */,
 				FE892B6E1AC8DEBF0013C663 /* kionTests */,
+				AC7588D61AE8BA2100452C07 /* kion WatchKit Extension */,
+				AC7588E81AE8BA2100452C07 /* kion WatchKit App */,
 				FE892B531AC8DEBE0013C663 /* Products */,
+				C502E282238FDCDF27754844 /* Pods */,
+				015375E6C1CDCFB758E8393A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +210,8 @@
 			children = (
 				FE892B521AC8DEBE0013C663 /* kion.app */,
 				FE892B6B1AC8DEBF0013C663 /* kionTests.xctest */,
+				AC7588D51AE8BA2100452C07 /* kion WatchKit Extension.appex */,
+				AC7588E41AE8BA2100452C07 /* kion WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +219,7 @@
 		FE892B541AC8DEBE0013C663 /* kion */ = {
 			isa = PBXGroup;
 			children = (
+				ACE4063A1AECB25000692884 /* kion.entitlements */,
 				FE892B591AC8DEBE0013C663 /* AppDelegate.h */,
 				FE892B5A1AC8DEBE0013C663 /* AppDelegate.m */,
 				FE892B5C1AC8DEBE0013C663 /* ViewController.h */,
@@ -122,17 +261,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE892B511AC8DEBE0013C663 /* kion */ = {
+		AC7588D41AE8BA2100452C07 /* kion WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE892B751AC8DEBF0013C663 /* Build configuration list for PBXNativeTarget "kion" */;
+			buildConfigurationList = AC7588F81AE8BA2100452C07 /* Build configuration list for PBXNativeTarget "kion WatchKit Extension" */;
 			buildPhases = (
-				FE892B4E1AC8DEBE0013C663 /* Sources */,
-				FE892B4F1AC8DEBE0013C663 /* Frameworks */,
-				FE892B501AC8DEBE0013C663 /* Resources */,
+				559F8D2B0C519BCB55ECA397 /* Check Pods Manifest.lock */,
+				AC7588D11AE8BA2100452C07 /* Sources */,
+				AC7588D21AE8BA2100452C07 /* Frameworks */,
+				AC7588D31AE8BA2100452C07 /* Resources */,
+				20287BF2E0944CF7DD25173A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC7588E71AE8BA2100452C07 /* PBXTargetDependency */,
+			);
+			name = "kion WatchKit Extension";
+			productName = "kion WatchKit Extension";
+			productReference = AC7588D51AE8BA2100452C07 /* kion WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		AC7588E31AE8BA2100452C07 /* kion WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7588F71AE8BA2100452C07 /* Build configuration list for PBXNativeTarget "kion WatchKit App" */;
+			buildPhases = (
+				AC7588E21AE8BA2100452C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kion WatchKit App";
+			productName = "kion WatchKit App";
+			productReference = AC7588E41AE8BA2100452C07 /* kion WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		FE892B511AC8DEBE0013C663 /* kion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE892B751AC8DEBF0013C663 /* Build configuration list for PBXNativeTarget "kion" */;
+			buildPhases = (
+				5AF8F1D187DA90A7C91D4B98 /* Check Pods Manifest.lock */,
+				FE892B4E1AC8DEBE0013C663 /* Sources */,
+				FE892B4F1AC8DEBE0013C663 /* Frameworks */,
+				FE892B501AC8DEBE0013C663 /* Resources */,
+				AC7588F91AE8BA2100452C07 /* Embed App Extensions */,
+				08D212E52A93ED35971D487D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC7588F11AE8BA2100452C07 /* PBXTargetDependency */,
 			);
 			name = kion;
 			productName = kion;
@@ -166,8 +344,27 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Mario C. Delgado Jr.";
 				TargetAttributes = {
+					AC7588D41AE8BA2100452C07 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4MVAASZV55;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					AC7588E31AE8BA2100452C07 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4MVAASZV55;
+					};
 					FE892B511AC8DEBE0013C663 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 4MVAASZV55;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FE892B6A1AC8DEBF0013C663 = {
 						CreatedOnToolsVersion = 6.2;
@@ -190,11 +387,31 @@
 			targets = (
 				FE892B511AC8DEBE0013C663 /* kion */,
 				FE892B6A1AC8DEBF0013C663 /* kionTests */,
+				AC7588D41AE8BA2100452C07 /* kion WatchKit Extension */,
+				AC7588E31AE8BA2100452C07 /* kion WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC7588D31AE8BA2100452C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7588E11AE8BA2100452C07 /* Images.xcassets in Resources */,
+				AC7588E51AE8BA2100452C07 /* kion WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7588E21AE8BA2100452C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7588ED1AE8BA2100452C07 /* Interface.storyboard in Resources */,
+				AC7588EF1AE8BA2100452C07 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE892B501AC8DEBE0013C663 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,7 +431,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08D212E52A93ED35971D487D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kion/Pods-kion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20287BF2E0944CF7DD25173A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kion WatchKit Extension/Pods-kion WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		559F8D2B0C519BCB55ECA397 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF8F1D187DA90A7C91D4B98 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AC7588D11AE8BA2100452C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7588DF1AE8BA2100452C07 /* NotificationController.m in Sources */,
+				AC7588DC1AE8BA2100452C07 /* InterfaceController.m in Sources */,
+				ACE4069C1AECBB1900692884 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE892B4E1AC8DEBE0013C663 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +526,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC7588E71AE8BA2100452C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7588E31AE8BA2100452C07 /* kion WatchKit App */;
+			targetProxy = AC7588E61AE8BA2100452C07 /* PBXContainerItemProxy */;
+		};
+		AC7588F11AE8BA2100452C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7588D41AE8BA2100452C07 /* kion WatchKit Extension */;
+			targetProxy = AC7588F01AE8BA2100452C07 /* PBXContainerItemProxy */;
+		};
 		FE892B6D1AC8DEBF0013C663 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FE892B511AC8DEBE0013C663 /* kion */;
@@ -244,6 +544,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AC7588EB1AE8BA2100452C07 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC7588EC1AE8BA2100452C07 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		FE892B5F1AC8DEBE0013C663 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,6 +571,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AC7588F31AE8BA2100452C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BAEF2E1528E95894FAC2D1 /* Pods-kion WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "kion WatchKit Extension/kion WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "kion WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AC7588F41AE8BA2100452C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA29F58C7CC656BA2D63B4C0 /* Pods-kion WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "kion WatchKit Extension/kion WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "kion WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AC7588F51AE8BA2100452C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = kion_WatchKit_Extension;
+				INFOPLIST_FILE = "kion WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		AC7588F61AE8BA2100452C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = kion_WatchKit_Extension;
+				INFOPLIST_FILE = "kion WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		FE892B731AC8DEBF0013C663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,21 +731,33 @@
 		};
 		FE892B761AC8DEBF0013C663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A1E62C62863D5A51398505 /* Pods-kion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kion/kion.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = kion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		FE892B771AC8DEBF0013C663 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF70A3632039354FAB196D24 /* Pods-kion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kion/kion.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = kion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -396,6 +798,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC7588F71AE8BA2100452C07 /* Build configuration list for PBXNativeTarget "kion WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7588F51AE8BA2100452C07 /* Debug */,
+				AC7588F61AE8BA2100452C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7588F81AE8BA2100452C07 /* Build configuration list for PBXNativeTarget "kion WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7588F31AE8BA2100452C07 /* Debug */,
+				AC7588F41AE8BA2100452C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FE892B4D1AC8DEBE0013C663 /* Build configuration list for PBXProject "kion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -412,6 +832,7 @@
 				FE892B771AC8DEBF0013C663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE892B781AC8DEBF0013C663 /* Build configuration list for PBXNativeTarget "kionTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +841,7 @@
 				FE892B7A1AC8DEBF0013C663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

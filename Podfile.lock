@@ -1,0 +1,22 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - JSONModel (0.9.3)
+  - KFOpenWeatherMapAPI (0.2.4):
+    - AFNetworking (~> 1.0)
+    - JSONModel (~> 0.9.1)
+  - MMWormhole (1.1.0):
+    - MMWormhole/Core (= 1.1.0)
+  - MMWormhole/Core (1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - KFOpenWeatherMapAPI
+  - MMWormhole
+
+SPEC CHECKSUMS:
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  JSONModel: 339789ed032ced1d184f329aa8e6620c11f83d34
+  KFOpenWeatherMapAPI: da556274a62d74dea517589807e53242239c4e1d
+  MMWormhole: 4730c4481718c2677412bf998422dbe305aa38a7
+
+COCOAPODS: 0.35.0

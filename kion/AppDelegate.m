@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+@property NSString *loc;
+@property NSString *cond;
+
 
 @end
 
@@ -16,8 +19,83 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    NSURL *appGroupContainer = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.com.mycompany.myapp"];
+    if (!appGroupContainer) {
+        NSLog(@"group identifier incorrect, or app groups not setup correctly");
+    }    return YES;
+    
+    if (application.applicationState != UIApplicationStateBackground) {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"myStoryboardName" bundle:nil];
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"myRootController"];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleReachabilityChange:)
+                                                     name:@"conditions"
+                                                   object:nil];
+    }
+
+    
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSCalendarOptions options = NSCalendarMatchNextTime;
+    NSDate *nextNineThirty = [calendar nextDateAfterDate:[NSDate date]
+                                            matchingHour:16
+                                                  minute:30
+                                                  second:30
+                                                 options:options];
+    
+    
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = nextNineThirty;
+    localNotification.alertBody = @"It will be %@ tomrorow", self.cond;
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.repeatInterval = NSCalendarUnitDay;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
+
+- (void)handleReachabilityChange:(NSNotification *)note {
+    NSDictionary *theData = [note userInfo];
+    if (theData != nil) {
+        _loc = [theData objectForKey:@"location"];
+        _cond = [theData objectForKey:@"condition"];
+
+    }
+}
+
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
+{
+        NSString * request = [userInfo objectForKey:@"requestString"];
+    // Temporary fix, I hope.
+    // --------------------
+    __block UIBackgroundTaskIdentifier bogusWorkaroundTask;
+    bogusWorkaroundTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        [[UIApplication sharedApplication] endBackgroundTask:bogusWorkaroundTask];
+    }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] endBackgroundTask:bogusWorkaroundTask];
+    });
+    // --------------------
+    
+    __block UIBackgroundTaskIdentifier realBackgroundTask;
+    realBackgroundTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        reply(nil);
+        [[UIApplication sharedApplication] endBackgroundTask:realBackgroundTask];
+    }];
+    
+    [self handleReachabilityChange:nil];
+    
+    NSArray * objects = [[NSArray alloc] initWithObjects: @"%@", _loc, @"%@", _cond, nil];
+    
+    NSArray * keys = [[NSArray alloc] initWithObjects:@"location1", @"cond", nil];
+    NSDictionary * replyContent = [[NSDictionary alloc] initWithObjects:objects forKeys:keys];
+   
+    reply(replyContent);
+    
+    
+    [[UIApplication sharedApplication] endBackgroundTask:realBackgroundTask];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" height="53" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="od7-AF-OgF">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <label width="134" alignment="left" text="It will be warmer tomorrow. " textAlignment="left" numberOfLines="0" id="8JQ-Fn-cLZ">
+                            <fontDescription key="font" type="system" weight="light" pointSize="21"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="307"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Good" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="It will be warmer tomorrow." textAlignment="left" numberOfLines="0" id="5j1-3B-5cS"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="Tyk-wg-8Pq">
+            <objects>
+                <glanceController id="vMq-M3-aHe" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" animationDuration="2" id="6f9-ah-EtZ">
+                            <items>
+                                <group width="1" alignment="left" animationDuration="2" id="Euz-v9-kW7">
+                                    <items>
+                                        <label width="136" height="1" alignment="left" text="In 4 Hours..." textAlignment="left" numberOfLines="0" id="apB-at-aZJ">
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="18"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="ebr-41-kI3">
+                            <items>
+                                <label width="1" alignment="left" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.60000000000000009" id="xeU-QZ-thW">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="24"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="Location" destination="apB-at-aZJ" id="kRq-R0-1G1"/>
+                        <outlet property="weatherCond" destination="xeU-QZ-thW" id="1Tx-7w-qN8"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
