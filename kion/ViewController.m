@@ -77,6 +77,17 @@ int refreshcounter;
     [locationManager startUpdatingLocation];
 }
 
+- (IBAction)didPressSendNotificationsButton:(id)sender {
+    
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    localNotification.alertBody = @"User notification!";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+}
+
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     // this delegate method is constantly invoked every some miliseconds.
     // we only need to receive the first response, so we skip the others.

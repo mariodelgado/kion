@@ -10,10 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label width="136" height="53" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="od7-AF-OgF">
-                            <fontDescription key="font" type="system" pointSize="24"/>
-                        </label>
-                        <label width="134" alignment="left" text="It will be warmer tomorrow. " textAlignment="left" numberOfLines="0" id="8JQ-Fn-cLZ">
+                        <label width="134" alignment="left" text="It will be nice out later this afternoon. " textAlignment="left" numberOfLines="0" id="8JQ-Fn-cLZ">
                             <fontDescription key="font" type="system" weight="light" pointSize="21"/>
                         </label>
                     </items>
